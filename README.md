@@ -14,8 +14,8 @@ Becasue is a simplier and lightweight alternative to J2EE. Because early version
 
 ## The steps to start a Spring project manually
 
-* Create a Eclispe project
-* Download Spring JAR files
+* Create a Eclispe project (File/New/Java Project)
+* Download Spring JAR files (https://repo.spring.io/release/org/springframework/spring/5.3.6/spring-5.3.6-dist.zip)
 * Add JAR files to Eclispe project (Build path)
 
 The automatic way is by using a build automation tool like Maven.
