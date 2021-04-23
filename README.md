@@ -25,3 +25,18 @@ The automatic way is by using a build automation tool like Maven.
 The approach of outsourcing the contruction and managment of objects.
 
 The classic way to instatiate an object is by declaring a reference variable to an instatiation of the object. But there is a software engineering best practice which is "Code an interface". Which let easily change an object for another one.
+
+### Spring container
+* Primary functions:
+** Create and manage objects (Inversion of control)
+** Inject object's dependencies (Dependency injection)
+
+#### Configuring and spring container
+* XML configuration
+* Java annotations
+* Java Source Code
+
+## Spring development process
+1. Configure your Spring Beans
+2. Create a Spring Container
+3. Retrieve Beans from Spring Container
