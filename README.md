@@ -20,7 +20,7 @@ Becasue is a simplier and lightweight alternative to J2EE. Because early version
 
 The automatic way is by using a build automation tool like Maven.
 
-## Inversion of Control (IoC)
+## Inversion of control (IoC)
 
 The approach of outsourcing the contruction and managment of objects.
 
@@ -40,3 +40,14 @@ The classic way to instatiate an object is by declaring a reference variable to 
 1. Configure your Spring Beans
 2. Create a Spring Container
 3. Retrieve Beans from Spring Container
+
+## Dependency injection
+The client delegates to calls to another object the responsability of providing its dependencies.
+The most common type of dependencies injection:
+* Constructor injection
+* Setter injection
+
+### Development process. Contructor injection
+1. Define the dependency interface and class
+2. Create a Contructor in your class for injections
+3. Configure the dependency injection in Spring config file
