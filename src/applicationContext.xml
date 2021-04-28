@@ -8,8 +8,13 @@ xmlns:context="http://www.springframework.org/schema/context"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xmlns="http://www.springframework.org/schema/beans">
 
-	<bean id="myCar"
-		class="com.spring.AudiCar">
+	<bean id="myEngine"
+		class="com.spring.StraightFourEngine">
+	</bean>
+
+	<bean id="myCar" 
+		class="com.spring.CitroenCar">
+		<constructor-arg ref="myEngine" />
 	</bean>
 
 

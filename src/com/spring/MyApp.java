@@ -8,6 +8,7 @@ public class MyApp {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		Car aCar = context.getBean("myCar", Car.class);
 		System.out.println(aCar.getAcarRide());
+		System.out.println(aCar.getEngine());
 		context.close();
 	}
 

@@ -42,12 +42,12 @@ The classic way to instantiate an object is by declaring a reference variable to
 3. Retrieve Beans from Spring Container
 
 ## Dependency injection
-The client delegates to calls to another object the responsability of providing its dependencies.
+The client delegates to calls to another object the responsibility of providing its dependencies.
 The most common type of dependencies injection:
 * Constructor injection
 * Setter injection
 
-### Development process. Contructor injection
+### Development process. Constructor injection
 1. Define the dependency interface and class
-2. Create a Contructor in your class for injections
-3. Configure the dependency injection in Spring config file
+2. Create a constructor in your class for injections
+3. Configure the dependency injection in Spring configuration file
