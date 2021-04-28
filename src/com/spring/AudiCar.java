@@ -7,4 +7,10 @@ public class AudiCar implements Car {
 		return "Driving an Audi";
 	}
 
+	@Override
+	public String getEngine() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

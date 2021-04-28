@@ -6,5 +6,11 @@ public class CitroenCar implements Car{
 	public String getAcarRide() {
 		return "Driving a Citroën car";
 	}
+
+	@Override
+	public String getEngine() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }
