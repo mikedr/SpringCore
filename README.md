@@ -47,7 +47,17 @@ The most common type of dependencies injection:
 * Constructor injection
 * Setter injection
 
-### Development process. Constructor injection
+### Constructor injection
+Inject dependencies by calling the constructor on your class.
+
+#### Development process. Constructor injection
 1. Define the dependency interface and class
 2. Create a constructor in your class for injections
 3. Configure the dependency injection in Spring configuration file
+
+### Setter injection
+Inject dependencies by calling setter method(s) on your class.
+
+#### Development process. Setter injection
+1. Create setter method(s) in your class for injections
+2. Configure the dependency injection in Spring configuration file
