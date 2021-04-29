@@ -2,6 +2,13 @@ package com.spring;
 
 public class AudiCar implements Car {
 
+	private EngineService engineService;
+	
+	public AudiCar(EngineService engineService) {
+		super();
+		this.engineService = engineService;
+	}
+
 	@Override
 	public String getAcarRide() {
 		return "Driving an Audi";
@@ -9,8 +16,7 @@ public class AudiCar implements Car {
 
 	@Override
 	public String getEngine() {
-		// TODO Auto-generated method stub
-		return null;
+		return engineService.provideEngine();
 	}
 
 }

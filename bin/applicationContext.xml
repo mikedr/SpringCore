@@ -9,11 +9,11 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns="http://www.springframework.org/schema/beans">
 
 	<bean id="myEngine"
-		class="com.spring.StraightFourEngine">
+		class="com.spring.V6Engine">
 	</bean>
 
 	<bean id="myCar" 
-		class="com.spring.CitroenCar">
+		class="com.spring.AudiCar">
 		<constructor-arg ref="myEngine" />
 	</bean>
 
