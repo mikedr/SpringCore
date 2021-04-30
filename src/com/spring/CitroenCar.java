@@ -3,6 +3,12 @@ package com.spring;
 public class CitroenCar implements Car{
 	
 	private EngineService engineService;
+	private String brand;
+	private String model;
+	
+	public CitroenCar() {
+
+	}
 	
 	public CitroenCar(EngineService engineService) {
 		this.engineService = engineService;
@@ -16,6 +22,22 @@ public class CitroenCar implements Car{
 	@Override
 	public String getEngine() {
 		return engineService.provideEngine();
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
 	}
 	
 }

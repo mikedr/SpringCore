@@ -22,8 +22,10 @@ xmlns="http://www.springframework.org/schema/beans">
 	</bean>
 
 	<bean id="myNewCar" 
-		class="com.spring.FordCar">
-		<property name="engineService" ref="otherEngine"/>
+		class="com.spring.CitroenCar">
+		<constructor-arg ref="otherEngine"/>
+		<property name="brand" value="Citroën"/>
+		<property name="model" value="C3"/>
 	</bean> 	
 
 
