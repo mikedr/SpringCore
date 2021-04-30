@@ -27,11 +27,12 @@ The approach of outsourcing the construction and management of objects.
 The classic way to instantiate an object is by declaring a reference variable to an instantiation of the object. But there is a software engineering best practice which is "Code an interface". Which let easily change an object for another one.
 
 ### Spring container
-* Primary functions:
+#### Primary functions:
 * Create and manage objects (Inversion of control)
 * Inject object's dependencies (Dependency injection)
 
 #### Configuring and spring container
+#### There are three options:
 * XML configuration
 * Java annotations
 * Java Source Code
