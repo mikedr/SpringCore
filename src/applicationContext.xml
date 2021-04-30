@@ -16,6 +16,15 @@ xmlns="http://www.springframework.org/schema/beans">
 		class="com.spring.AudiCar">
 		<constructor-arg ref="myEngine" />
 	</bean>
+	
+	<bean id="otherEngine"
+		class="com.spring.StraightFourEngine">
+	</bean>
+
+	<bean id="myNewCar" 
+		class="com.spring.FordCar">
+		<property name="engineService" ref="otherEngine"/>
+	</bean> 	
 
 
 </beans>
