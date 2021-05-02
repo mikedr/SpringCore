@@ -31,8 +31,7 @@ The classic way to instantiate an object is by declaring a reference variable to
 * Create and manage objects (Inversion of control)
 * Inject object's dependencies (Dependency injection)
 
-#### Configuring and spring container
-#### There are three options:
+#### Configuring and spring container, there are three options:
 * XML configuration
 * Java annotations
 * Java Source Code
@@ -62,3 +61,5 @@ Inject dependencies by calling setter method(s) on your class.
 #### Development process. Setter injection
 1. Create setter method(s) in your class for injections
 2. Configure the dependency injection in Spring configuration file
+
+## Spring Bean Scopes and Lifecycle
