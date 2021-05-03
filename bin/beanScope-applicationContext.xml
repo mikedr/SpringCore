@@ -13,7 +13,8 @@ xmlns="http://www.springframework.org/schema/beans">
 	</bean>
 
 	<bean id="myCar" 
-		class="com.spring.AudiCar">
+		class="com.spring.AudiCar"
+		scope="prototype">
 		<constructor-arg ref="myEngine" />
 	</bean>
 	
