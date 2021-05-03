@@ -78,4 +78,4 @@ Additional spring bean scopes:
 
 Bean Lifecycle
 
-![alt text](https://github.com/mikedr/Spring/tree/main/images-readme/beanLifecycle.png)
+![alt text](https://github.com/mikedr/Spring/blob/main/images-readme/beanLifecycle.png)
