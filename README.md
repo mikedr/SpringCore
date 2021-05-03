@@ -62,6 +62,17 @@ Inject dependencies by calling setter method(s) on your class.
 1. Create setter method(s) in your class for injections
 2. Configure the dependency injection in Spring configuration file
 
-## Spring Bean Scopes and Lifecycle
+## Spring bean scopes and Lifecycle
 Scopes refers to the lifecycle of a bean. How long does the bean live? How many instances are created? How is the bean shared?
-By default the scope is singleton, it means that Spring Container creates only one instance of the bean by default, it is cached in memory, all requests for the bean will return a shared reference of the same bean.
+By default the scope is singleton, it means that Spring Container creates only one instance of the bean by default, it is cached in memory and all requests for the bean will return a shared reference of the same bean.
+
+Additional spring bean scopes
+
+| Scope	| Description |
+| :----: | :----: |
+| singleton	| Creates a single shared instance of the bean |
+| prototype	| Creates a new instance bean for each container request |
+| request 	| Scoped to and HTTP web request. Only used for web apps |
+| session	| Scoped to and HTTP web session. Only used for web apps |
+| global-session	| Scoped to a global HTTP web session. Only used for web apps |
+
