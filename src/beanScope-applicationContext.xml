@@ -14,7 +14,9 @@ xmlns="http://www.springframework.org/schema/beans">
 
 	<bean id="myCar" 
 		class="com.spring.AudiCar"
-		scope="prototype">
+		scope="prototype"
+		init-method="doMyStartupSuff"
+		destroy-method="doMyDestroySuff">
 		<constructor-arg ref="myEngine" />
 	</bean>
 	
