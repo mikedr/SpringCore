@@ -36,7 +36,7 @@ The classic way to instantiate an object is by declaring a reference variable to
 * Java annotations
 * Java Source Code
 
-## Spring development process
+## XML configuration. Spring development process
 1. Configure your Spring Beans
 2. Create a Spring Container
 3. Retrieve Beans from Spring Container
@@ -79,3 +79,13 @@ Additional spring bean scopes:
 Bean Lifecycle
 
 ![alt text](https://github.com/mikedr/Spring/blob/main/images-readme/beanLifecycle.png)
+
+### Java Annotations
+Java annotations are special markers add to Java classes. Annotations minimizes the XML configuration which could be big on large projects.
+
+When we use annotations Spring scans the Java classes and automatically register the beans in the Spring container.
+
+## Java annotations. Spring development process
+1. Enable component scanning in Spring config file
+2. Add the @Component annotation to the java classes
+3. Retrieve bean from Spring container
