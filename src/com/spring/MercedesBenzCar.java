@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component("theMechi")
 public class MercedesBenzCar implements Car {
 
-	public MercedesBenzCar(EngineService engineService) {
+	public MercedesBenzCar() {
 
 	}
 
