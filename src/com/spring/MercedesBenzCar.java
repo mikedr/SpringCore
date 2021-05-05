@@ -16,7 +16,7 @@ public class MercedesBenzCar implements Car {
 
 	@Override
 	public String getAcarRide() {
-		return "Driving my fancy Mecedes";
+		return "Driving my fancy Mercedes";
 	}
 
 }
