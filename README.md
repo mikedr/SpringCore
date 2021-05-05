@@ -89,3 +89,6 @@ When we use annotations Spring scans the Java classes and automatically register
 1. Enable component scanning in Spring config file
 2. Add the @Component annotation to the java classes
 3. Retrieve bean from Spring container
+
+#### Default Component names
+The @Component annotation can be used: @Component("theChossenId") but if we use only @Component the id will be the class name with the first letter in lower case.
