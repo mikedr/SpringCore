@@ -92,3 +92,5 @@ When we use annotations Spring scans the Java classes and automatically register
 
 #### Default Component names
 The @Component annotation can be used: @Component("theChossenId") but if we use only @Component the id will be the class name with the first letter in lower case.
+
+### Spring dependency injection with Annotations and Autowiring
