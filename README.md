@@ -94,4 +94,14 @@ When we use annotations Spring scans the Java classes and automatically register
 The @Component annotation can be used: @Component("theChossenId") but if we use only @Component the id will be the class name with the first letter in lower case.
 
 ### Spring dependency injection with Annotations and Autowiring
-For dependency injection Spring can use auto wiring. Spring  will look for a class that matches the property (matches by type: class or interface). Spring will inject it automatically... hence autowired.
+For dependency injection Spring can use auto wiring. Spring  will look for a class that matches the property (matches by type: class or interface). Spring will inject it automatically... hence autowired. There are three autowiring injection types:
+
+* Contructor Injection
+* Setter injection
+* Fied injection
+
+#### Contruction injection
+
+1. Define the dependency interface and class
+2. Create contructor in your class for injections
+3. Configure the dependency injection with @Autowired annotation
