@@ -1,9 +1,12 @@
 package com.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class MazdaCar implements Car{
 
 	private EngineService engineService;
 	
+	@Autowired
 	public MazdaCar (EngineService engineService) {
 		this.engineService = engineService;
 	}
