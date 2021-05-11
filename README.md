@@ -104,6 +104,8 @@ For dependency injection Spring can use auto wiring. Spring  will look for a cla
 
 Inject dependencies by using the constructor of the class.
 
+Process:
+
 1. Define the dependency interface and class
 2. Create contructor in your class for injections
 3. Configure the dependency injection with @Autowired annotation
@@ -111,3 +113,8 @@ Inject dependencies by using the constructor of the class.
 #### Setter injection
 
 Inject dependencies by calling setter methods on the class.
+
+Process:
+
+1. Create setter methods in the class for injections.
+2. Configure the dependency injection with @Autowired annotation.
