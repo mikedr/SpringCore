@@ -8,9 +8,8 @@ public class MazdaCar implements Car{
 
 	private EngineService engineService;
 	
-	@Autowired
-	public MazdaCar (EngineService engineService) {
-		this.engineService = engineService;
+	public MazdaCar () {
+
 	}
 	
 	@Override
@@ -23,4 +22,7 @@ public class MazdaCar implements Car{
 		return engineService.provideEngine();
 	}
 
+	public void setEngineService(EngineService engineService) {
+		this.engineService = engineService;
+	}
 }
