@@ -23,7 +23,7 @@ public class MazdaCar implements Car{
 	}
 
 	@Autowired
-	public void setEngineService(EngineService engineService) {
+	public void anotherNameThanSet(EngineService engineService) {
 		this.engineService = engineService;
 	}
 }
