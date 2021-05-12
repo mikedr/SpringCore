@@ -22,6 +22,7 @@ public class MazdaCar implements Car{
 		return engineService.provideEngine();
 	}
 
+	@Autowired
 	public void setEngineService(EngineService engineService) {
 		this.engineService = engineService;
 	}
