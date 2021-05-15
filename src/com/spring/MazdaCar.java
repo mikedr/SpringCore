@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MazdaCar implements Car{
 
+	@Autowired
 	private EngineService engineService;
 	
 	public MazdaCar () {
@@ -22,8 +23,4 @@ public class MazdaCar implements Car{
 		return engineService.provideEngine();
 	}
 
-	@Autowired
-	public void anotherNameThanSet(EngineService engineService) {
-		this.engineService = engineService;
-	}
 }

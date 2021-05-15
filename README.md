@@ -116,5 +116,13 @@ Inject dependencies by calling setter methods on the class.
 
 Process:
 
-1. Create setter methods in the class for injections.
-2. Configure the dependency injection with @Autowired annotation.
+1. Create setter methods in the class for injections
+2. Configure the dependency injection with @Autowired annotation
+
+#### Method injection
+
+Inject dependencies by calling ANY method in the class.
+
+#### Field injection
+
+Inject dependencies by setting fields values in the class (even private fields).
