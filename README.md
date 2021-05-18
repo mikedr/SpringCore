@@ -127,3 +127,7 @@ Inject dependencies by calling ANY method in the class.
 
 Inject dependencies by setting fields values in the class (even private fields).
 
+#### Qualifiers for dependency injection
+
+So far we used autowiring, where Spring will look for @Component annotation and then it looks for a clase which iplements that interface. But, what happends if there are more multiple implementation of the needed interface? In this case we need to tell Spring which bean to use by using the @Qualifier annotation.
+
