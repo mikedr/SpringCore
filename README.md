@@ -131,3 +131,24 @@ Inject dependencies by setting fields values in the class (even private fields).
 
 So far we used autowiring, where Spring will look for @Component annotation and then it looks for a clase which iplements that interface. But, what happends if there are more multiple implementation of the needed interface? In this case we need to tell Spring which bean to use by using the @Qualifier annotation.
 
+#### Annotations - Default Bean Names - The Special Case
+
+Annotations - Default Bean Names ... and the Special Case
+
+In general, when using Annotations, for the default bean name, Spring uses the following rule.
+
+If the annotation's value doesn't indicate a bean name, an appropriate name will be built based on the short name of the class (with the first letter lower-cased).
+
+For example:
+
+HappyFortuneService --> happyFortuneService
+
+---
+
+However, for the special case of when BOTH the first and second characters of the class name are upper case, then the name is NOT converted.
+
+For the case of RESTFortuneService
+
+RESTFortuneService --> RESTFortuneService
+
+No conversion since the first two characters are upper case.
