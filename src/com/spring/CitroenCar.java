@@ -1,7 +1,9 @@
 package com.spring;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CitroenCar implements Car{
 	
 	private EngineService engineService;
