@@ -158,3 +158,5 @@ No conversion since the first two characters are upper case.
 1. Create a properties file to hold your properties. It will be a name value pair 
 2. Load the properties file in the XML config file
 3. Inject the properties values into your code
+
+### Bean scopes	with annotations
