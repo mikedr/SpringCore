@@ -160,3 +160,5 @@ No conversion since the first two characters are upper case.
 3. Inject the properties values into your code
 
 ### Bean scopes	with annotations
+
+The default scope is singleton.
