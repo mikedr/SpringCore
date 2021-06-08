@@ -8,11 +8,7 @@ public class AnnotationBeanScopeDemoApp {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext2.xml");
 		Car theCar = context.getBean("fiatCar",Car.class);
-		Car otherCar = context.getBean("fiatCar",Car.class);
-		boolean result = theCar == otherCar;
-		System.out.println("Memory location myCar: "+theCar);
-		System.out.println("Memory location otherCar: "+otherCar);
-		System.out.println("Are pointing to the same object?: "+result);
+		System.out.println(theCar.getAcarRide());
 		context.close();
 	}
 

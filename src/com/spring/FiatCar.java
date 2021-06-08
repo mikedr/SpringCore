@@ -1,5 +1,8 @@
 package com.spring;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -12,10 +15,12 @@ public class FiatCar implements Car {
 		return "Driving a Fiat";
 	}
 
+	@PostConstruct
 	public void doMyStartupSuff() {
 		System.out.println("Fiat: inside startup");
 	}
 	
+	@PreDestroy
 	public void doMyDestroySuff() {
 		System.out.println("Fiat: inside destroy");
 	}
