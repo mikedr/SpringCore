@@ -162,3 +162,8 @@ No conversion since the first two characters are upper case.
 ### Bean scopes	with annotations
 
 The default scope is singleton.
+
+#### Bean lifecycle with annotations
+
+1. Define the methods for init and destroy
+2. Add annotations @PostConstruct and @PreDestroy
