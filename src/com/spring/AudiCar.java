@@ -1,5 +1,8 @@
 package com.spring;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 public class AudiCar implements Car {
 
 	private EngineService engineService;
