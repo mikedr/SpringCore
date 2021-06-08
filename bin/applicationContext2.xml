@@ -8,37 +8,7 @@ xmlns:context="http://www.springframework.org/schema/context"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xmlns="http://www.springframework.org/schema/beans">
 
-	<context:property-placeholder location="classpath:cars.properties"/>
+	<context:component-scan base-package="com.spring" />
 
-	<bean id="myEngine"
-		class="com.spring.V6Engine">
-	</bean>
-
-	<bean id="myCar" 
-		class="com.spring.AudiCar">
-		<constructor-arg ref="myEngine" />
-	</bean>
-	
-	<bean id="otherEngine"
-		class="com.spring.StraightFourEngine">
-	</bean>
-
-	<bean id="myNewCar" 
-		class="com.spring.CitroenCar">
-		<constructor-arg ref="otherEngine"/>
-		<property name="brand" value="Citroën"/>
-		<property name="model" value="C3"/>
-	</bean> 	
-
-	<bean id="otherEngine2"
-		class="com.spring.StraightFourEngine">
-	</bean>
-
-	<bean id="myNewestCar" 
-		class="com.spring.FordCar">
-		<property name="engineService" ref="otherEngine2"/>
-		<property name="brand" value="${car.brand.ford.focus}"/>
-		<property name="model" value="${car.model.ford.focus}"/>
-	</bean>
 
 </beans>
