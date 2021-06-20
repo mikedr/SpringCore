@@ -167,3 +167,6 @@ The default scope is singleton.
 
 1. Define the methods for init and destroy
 2. Add annotations @PostConstruct and @PreDestroy
+
+## Spring Configuration with Java Code (no xml)
+
