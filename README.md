@@ -32,9 +32,9 @@ The classic way to instantiate an object is by declaring a reference variable to
 * Inject object's dependencies (Dependency injection)
 
 #### Configuring and spring container, there are three options:
-* XML configuration
-* Java annotations
-* Java Source Code
+* XML configuration (Full XML configuration)
+* Java annotations (XML component scan)
+* Java Source Code (Java configuration class)
 
 ## XML configuration. Spring development process
 1. Configure your Spring Beans
