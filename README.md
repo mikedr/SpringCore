@@ -170,3 +170,9 @@ The default scope is singleton.
 
 ## Spring Configuration with Java Code (no xml)
 
+#### Development process
+
+1. Create a class and annotate as @Configuration 
+2. Add component scanning support: @ComponentScan (Optional)
+3. Read Spring Java configuration class
+4. Retrieve bean from Spring container
