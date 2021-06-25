@@ -1,13 +1,15 @@
 package com.spring;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class JavaConfigDemoApp {
 
 	public static void main(String[] args) {
 
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(CarsConfig.class);
-O	}
+		Car theCar = context.getBean("fiatCar",Car.class);
+		System.out.println(theCar.getAcarRide());
+		context.close();
+	}
 
 }
