@@ -176,3 +176,10 @@ The default scope is singleton.
 2. Add component scanning support: @ComponentScan (Optional)
 3. Read Spring Java configuration class
 4. Retrieve bean from Spring container
+
+#### Defining Spring Beans with Java Code (no xml)
+
+1. Define method to expose bean
+2. Inject bean dependencies
+3. Read Spring Java configuration class
+4. Retrieve bean from Spring container
