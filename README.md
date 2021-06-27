@@ -188,4 +188,4 @@ The default scope is singleton.
 
 1. Create propeties file
 2. Load properties file in Spring config
-3. Reference vlaues from properties file
+3. Reference values from properties file
