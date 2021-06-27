@@ -1,6 +1,14 @@
 package com.spring;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class BMWCar implements Car{
+	
+	@Value("${car.brand}")
+	private String brand;
+	
+	@Value("${car.color}")
+	private String color;
 	
 	private EngineService engineService;
 	
@@ -17,5 +25,14 @@ public class BMWCar implements Car{
 	public String getEngine() {
 		return engineService.provideEngine();
 	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public String getColor() {
+		return color;
+	}
+	
 
 }
