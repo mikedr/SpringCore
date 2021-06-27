@@ -12,5 +12,10 @@ public class CarsConfig {
 	public EngineService inlineEngine() {
 		return new InlineEngine();
 	}
+	
+	@Bean
+	public Car bMWCar() {
+		return new BMWCar(inlineEngine());
+	}
 
 }
