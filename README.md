@@ -183,3 +183,9 @@ The default scope is singleton.
 2. Inject bean dependencies
 3. Read Spring Java configuration class
 4. Retrieve bean from Spring container
+
+#### Injecting Values from Properties File
+
+1. Create propeties file
+2. Load properties file in Spring config
+3. Reference vlaues from properties file
